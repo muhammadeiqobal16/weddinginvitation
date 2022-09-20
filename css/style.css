@@ -184,6 +184,15 @@ h3{
     h3{
         font-size: 2em;
     }
+
+    .floNav{
+        width: 90%;
+        height: 70px;
+        border: 5px solid rgba(255, 255, 255, .7);
+    }
+    #floatNavbar img{
+        transform: scale(2);
+    }
 }
 
 /* ANIMATION */
