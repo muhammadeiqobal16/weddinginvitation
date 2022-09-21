@@ -1,5 +1,13 @@
 document.addEventListener(`DOMContentLoaded`, function(){
 
+    window.addEventListener(`scroll`, function(){
+        revealBot();
+        revealLeft();
+        revealRight();
+        revealFade();
+        revealTransform();
+    });
+
     const bgMusic = document.getElementById(`bgMusic`);
     const openBtn = document.querySelector(`.openBtn`);
     openBtn.addEventListener(`click`, function(){
@@ -12,14 +20,6 @@ document.addEventListener(`DOMContentLoaded`, function(){
             mainLetter.classList.add(`fadeEffect`);
             coverLetter.toggleAttribute(`hidden`);
         }, 1000);
-    })
-
-    window.addEventListener(`scroll`, function(){
-        revealBot();
-        revealLeft();
-        revealRight();
-        revealFade();
-        revealTransform();
     });
     
     function revealLeft(){
@@ -34,9 +34,9 @@ document.addEventListener(`DOMContentLoaded`, function(){
                 reveals[i].classList.add(`activeLeft`);
             }else{
                 reveals[i].classList.remove(`activeLeft`);
-            }
-        }
-    }
+            };
+        };
+    };
     
     function revealRight(){
         let reveals = document.querySelectorAll(`.revealRight`);
@@ -50,9 +50,9 @@ document.addEventListener(`DOMContentLoaded`, function(){
                 reveals[i].classList.add(`activeRight`);
             }else{
                 reveals[i].classList.remove(`activeRight`);
-            }
-        }
-    }
+            };
+        };
+    };
     
     function revealBot(){
         let reveals = document.querySelectorAll(`.revealBot`);
@@ -66,9 +66,9 @@ document.addEventListener(`DOMContentLoaded`, function(){
                 reveals[i].classList.add(`activeBot`);
             }else{
                 reveals[i].classList.remove(`activeBot`);
-            }
-        }
-    }
+            };
+        };
+    };
     
     function revealFade(){
         let reveals = document.querySelectorAll(`.revealFade`);
@@ -82,9 +82,9 @@ document.addEventListener(`DOMContentLoaded`, function(){
                 reveals[i].classList.add(`activeFade`);
             }else{
                 reveals[i].classList.remove(`activeFade`);
-            }
-        }
-    }
+            };
+        };
+    };
     
     function revealTransform(){
         let reveals = document.querySelectorAll(`.revealTransform`);
